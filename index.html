@@ -1,4 +1,4 @@
-<html class="js backgroundsize borderimage csstransitions fontface svg" lang="en" dir="ltr">
+<html class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
 <head>
 	<title>Hi/Max Real Estate</title>
 	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
@@ -27,40 +27,43 @@
 
 <body>
 
-	<div role="search"> <!-- start of search-->
-		<div id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
-			<h2>Search</h2>
-
-			<form action="/en/sr/srb.html" method="get" name="cse-search-box" role="search">
-				<div class="form-group wb-srch-qry">
-					<label for="wb-srch-q" class="wb-inv">Search Hi/Max.ca</label>
-
-					<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search"
-						value="" size="34" maxlength="170" placeholder="Search Hi/Max.ca">
-				</div>
-				<div class="form-group submit">
-					<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span
-							class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
-				</div>
-			</form>
-
-		</div> <!--end of search-->
-	</div>
     
-        <div class="header" role="banner" aria-label="Hi/Max"> <!-- start of header-->
+    <header> <!-- start of header-->
+        <div> <!-- start of search-->
+            <div id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+                <h2>Search</h2>
+
+                <form action="/en/sr/srb.html" method="get" name="cse-search-box" role="search">
+                    <div class="form-group wb-srch-qry">
+                        <label for="wb-srch-q" class="wb-inv">Search Hi/Max.ca</label>
+
+                        <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search"
+                            value="" size="34" maxlength="170" placeholder="Search Hi/Max.ca">
+                    </div>
+                    <div class="form-group submit">
+                        <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span
+                                class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+                    </div>
+                </form>
+
+            </div> <!--end of search-->
+        </div>
+    
+    
+        
 
             <div class="app-bar">
                 <div class="container">
                     <div class="row">
                         <section class="col-xs-12">
-                            <h2 class="wb-inv">Hi/Max Real Estate</h2>
+                            <h2 class="wb-inv">Hi/Max RealEstate</h2>
                             <a class="app-name" href="./index-en.html">Hi/Max Real Estate</a>
                         </section>
                     </div>
                 </div>
             </div>
             
-            <nav>
+            <nav aria-labelledby="Topics Menu">
                 <div id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
                     class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
                     typeof="SiteNavigationElement">
@@ -81,16 +84,14 @@
                             </ul>
                         </div>
                     </div>
-
-
                 </div> <!-- end of main navigation-->
-         </nav>
-        </div> <!-- end of header-->
+            </nav>
+    </header>
       
 
-	<main property="mainContentOfPage" class="container">
+	<main property="mainContentOfPage" class="container" >
 		<h1>Welcome</h1>
-            <h3>Hi/Max Real Estate & Houses</h3>
+            <h1>Hi/Max Real Estate & Houses</h1>
                 <p>Buying or selling a home is likely the largest and most important transaction you'll ever make. That's why so many trust 
                     Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real Estate Agents in Canada 
                     six times in a row.
@@ -99,8 +100,8 @@
                 Lets get started
             </a>
 		<div class="row">
-			<div class="col-md-4 pull-right">
-				<h3>Related Resources</h3>
+			<aside class="col-md-4 pull-right" aria-labelledby="Related Resources">
+				<h1>Related Resources</h1>
                 <p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move.</p>
                 <ul>
                     <li><a href="https://www.google.ca/" target="external" aria-label="(Opens link in a new window)">
@@ -111,13 +112,13 @@
                         How much is your current home worth?</a></li>
                 </ul>
 
-			</div>
-			<div class="col-md-8">
-				<h3>Why choosing Hi/max</h3>
+			</aside>
+			<section class="col-md-8" aria-labelledby="Why Choosing Hi Max">
+				<h1>Why choosing Hi/max</h1>
                     <p>Hi/Max agents go above and beyond and always strive to be the best they can be. 
                         HI/MAX is extremely community focused, and our agents are too!
                     </p>
-                <h3>Stats of Hi/Max</h3>
+                <h1>Stats of Hi/Max</h1>
                 <table border="1">
                     <thead>
                         <tr>
@@ -134,28 +135,28 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td headers="Year">2021</td>
-                            <td headers="SP Location1">50</td>
-                            <td headers="SP Location1">100</td>
-                            <td headers="ASP Layout1">$500,000</td>
-                            <td headers="ASP Layout2">$189,000</td>
+                            <th id="2021" headers="Year">2021</td>
+                            <td headers="2021 SP Location1">50</td>
+                            <td headers="2021 SP Location1">100</td>
+                            <td headers="2021 ASP Layout1">$500,000</td>
+                            <td headers="2021 ASP Layout2">$189,000</td>
                         </tr>
                         <tr>
-                            <td headers="Year">2022</td>
-                            <td headers="SP Location2">100</td>
-                            <td headers="SP Location2">200</td>
-                            <td headers="ASP Layout1">$780,000</td>
-                            <td headers="ASP Layout2">$240,000</td>
+                            <th id="2022" headers="Year">2022</td>
+                            <td headers="2022 SP Location2">100</td>
+                            <td headers="2022 SP Location2">200</td>
+                            <td headers="2022 ASP Layout1">$780,000</td>
+                            <td headers="2022 ASP Layout2">$240,000</td>
                         </tr>
                     </tbody>
                 </table>
 
-			</div>
+			</section>
 		</div>
 		<div class="clear"></div>
-		<div><h3>More Resources on How to choose the Right Agent</h3></div>
-		<div class="row">
-			<div class="col-md-4 ">
+		<div><h1>More Resources on How to choose the Right Agent</h1></div>
+		<aside class="row" aria-label="More Resources">
+			<section class="col-md-4 ">
 				
                 <img src="https://github.com/jaelendsetosta-AC/Accessible_Lab5/blob/main/1.png?raw=true">
                 <br>
@@ -165,8 +166,8 @@
                 <p>We've all seen the videos, read the stories, and gasped at the images of people who thought they could conquer a 
                     project that would have been better left to the professionals. 
                 </p>
-			</div>
-			<div class="col-md-4">
+			</section>
+			<section class="col-md-4">
 				
                 <img src="https://github.com/jaelendsetosta-AC/Accessible_Lab5/blob/main/2.png?raw=true">
                 <br>
@@ -177,8 +178,8 @@
                     to working with a real estate agent, including higher sale prices.  
                 </p>
 
-			</div>
-			<div class="col-md-4">
+			</section>
+			<section class="col-md-4">
 				<img src="https://github.com/jaelendsetosta-AC/Accessible_Lab5/blob/main/3.png?raw=true">
                 <br>
                 <a href="https://www.google.ca/" target="external" aria-label="(Opens link in a new window)">
@@ -187,8 +188,8 @@
                 <p>With all the many different moving parts involved in selling your home, 
                     here are eight very valid reasons to have a real estate agent on speed dial.  
                 </p>
-			</div>
-		</div>
+			</section>
+		</aside>
 		<div class="pagedetails">
 			<dl id="wb-dtmd">
 				<dt>Date modified: </dt>
@@ -208,8 +209,8 @@
 						<li><a href="#">Privacy policy</a></li>
 						<li><a href="#">Accessibility statement</a></li>
 						<li style="list-style: none;" class="social">
-                        <a href="#" aria-label="Twitter"><svg role ="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-							<title>Connect on our Twitter Page</title>
+                        <a href="#" aria-labelledby="Twitter"><svg role ="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+							<title id="Twitter">Connect on our Twitter Page</title>
 						  <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path>
 						</svg></a></li>
 						
